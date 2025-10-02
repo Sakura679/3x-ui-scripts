@@ -2,6 +2,9 @@
 
 set -e
 
+apk update && apk upgrade
+apk add --no-cache wget curl git openssh openssl openrc
+
 echo "正在准备 glibc 安装修复环境..."
 
 # 1. 删除 /etc/nsswitch.conf（防止冲突）
