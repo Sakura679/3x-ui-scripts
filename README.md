@@ -4,14 +4,17 @@ mkdir -p /run/openrc
 touch /run/openrc/softlevel
 ```
 
-### 安装
-#### debian系统
+### debian系统
 上传安装包后安装
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/Sakura679/3x-ui-scripts/refs/heads/main/install_by_tar_gz_file.sh)
 ```
+或
+```
+VERSION=v2.6.6 && bash <(curl -Ls "https://raw.githubusercontent.com/mhsanaei/3x-ui/$VERSION/install.sh") $VERSION
+```
 
-#### alpine系统
+### alpine系统
 上传安装包后安装
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/Sakura679/3x-ui-scripts/refs/heads/main/install_for_alpine_by_tar_gz_file.sh)
