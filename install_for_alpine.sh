@@ -88,7 +88,6 @@ install_x_ui() {
 
     cd /usr/local || exit 1
 
-    # tag_version=$(curl -Ls "https://api.github.com/repos/StarVM-OpenSource/3x-ui-Apline/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
     tag_version=v2.6.6
     if [[ -z "$tag_version" ]]; then
         echo -e "${red}获取x-ui最新版本失败${plain}"
@@ -96,7 +95,7 @@ install_x_ui() {
     fi
 
     echo -e "x-ui：${tag_version}，开始下载安装包..."
-    wget --no-check-certificate -O x-ui-linux-alpine.tar.gz "https://github.com/StarVM-OpenSource/3x-ui-Apline/releases/download/${tag_version}/x-ui-linux-amd64.tar.gz"
+    wget --no-check-certificate -O x-ui-linux-alpine.tar.gz "https://github.com/MHSanaei/3x-ui/releases/download/${tag_version}/x-ui-linux-amd64.tar.gz"
     if [[ $? -ne 0 ]]; then
         echo -e "${red}下载失败，请检查网络${plain}"
         exit 1
