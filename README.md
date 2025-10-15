@@ -14,3 +14,11 @@ bash <(curl -Ls https://raw.githubusercontent.com/Sakura679/3x-ui-scripts/refs/h
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/Sakura679/3x-ui-scripts/refs/heads/main/install_for_alpine.sh)
 ```
+
+### 如果更新系统卡住，请更换镜像源
+```
+cat > /etc/apk/repositories <<'EOF'
+https://mirrors.aliyun.com/alpine/v3.22/main/
+https://mirrors.aliyun.com/alpine/v3.22/community/
+EOF
+```
