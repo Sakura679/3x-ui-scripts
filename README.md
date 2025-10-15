@@ -5,10 +5,16 @@ touch /run/openrc/softlevel
 ```
 
 ### 安装
-
+#### debian系统
 上传安装包后安装
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/Sakura679/3x-ui-scripts/refs/heads/main/install_by_tar_gz_file.sh)
+```
+
+#### alpine系统
+上传安装包后安装
+```
+bash <(curl -Ls https://raw.githubusercontent.com/Sakura679/3x-ui-scripts/refs/heads/main/install_for_alpine_by_tar_gz_file.sh)
 ```
 或
 ```
