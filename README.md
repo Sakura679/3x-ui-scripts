@@ -5,7 +5,7 @@ touch /run/openrc/softlevel
 ```
 
 ### debian系统
-上传安装包后安装
+上传安装包后安装  将文件上传至 ```/usr/local``` 目录下
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/Sakura679/3x-ui-scripts/refs/heads/main/install_by_tar_gz_file.sh)
 ```
@@ -15,7 +15,7 @@ VERSION=v2.6.6 && bash <(curl -Ls "https://raw.githubusercontent.com/mhsanaei/3x
 ```
 
 ### alpine系统
-上传安装包后安装
+上传安装包后安装  将文件上传至 ```/usr/local``` 目录下
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/Sakura679/3x-ui-scripts/refs/heads/main/install_for_alpine_by_tar_gz_file.sh)
 ```
